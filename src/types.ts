@@ -258,6 +258,11 @@ export interface OptionsUnoCSS extends OptionsOverrides {
    * @default false
    */
   strict?: boolean
+  /**
+   * Set unocss config path
+   * @default uno.config.ts
+   */
+  configPath?: string
 }
 
 export interface OptionsConfig extends OptionsComponentExts, OptionsProjectType {

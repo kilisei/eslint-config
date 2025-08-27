@@ -7,6 +7,7 @@ export async function unocss(
 ): Promise<TypedFlatConfigItem[]> {
   const {
     attributify = true,
+    configPath = 'uno.config.ts',
     strict = false,
   } = options
 
@@ -38,6 +39,9 @@ export async function unocss(
               'unocss/blocklist': 'error',
             }
           : {},
+      },
+      settings: {
+        configPath,
       },
     },
   ]
